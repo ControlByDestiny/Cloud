@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--全屏-->
+    <style name="AppTheme.Full" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@android:color/white</item>
+
+        <!--底部导航栏透明-->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+    </style>
+    <!--全屏透明-->
+    <style name="AppTheme.Splash" parent="AppTheme.Full">
+        <!--全屏-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <!--设置背景透明，消除加载等待是黑屏现象-->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="AppTheme.Guide" parent="AppTheme.Full">
+        <!--底部导航栏可见，并且颜色为淡灰-->
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+    </style>
+</resources>
