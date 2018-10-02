@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.arduino.cloud.R;
+import com.chinamobile.iot.onenet.edp.toolbox.EdpClient;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.data.PieData;
@@ -23,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+    private void pieChartTest(){
         pieChart = findViewById(R.id.test_pie);
         pieChart.setCenterText("60%");
         pieChart.setCenterTextColor(Color.BLUE);
@@ -84,7 +87,5 @@ public class MainActivity extends AppCompatActivity {
         // 设置图例标签文本的大小
         l.setTextColor(Color.parseColor("#ff9933"));
         // 设置图例标签文本的颜色
-
-
     }
 }
