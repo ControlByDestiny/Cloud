@@ -23,7 +23,8 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activity.GuideActivity">
+        <activity android:name=".activity.GuideActivity"
+            android:theme="@style/AppTheme.Guide">
             <intent-filter>
                 <action android:name="android.intent.action.TO_GUID"/>
                 <category android:name="android.intent.category.DEFAULT"/>

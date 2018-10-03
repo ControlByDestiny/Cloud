@@ -24,6 +24,6 @@
     </style>
     <style name="AppTheme.Guide" parent="AppTheme.Full">
         <!--底部导航栏可见，并且颜色为淡灰-->
-        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <!--<item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>-->
     </style>
 </resources>

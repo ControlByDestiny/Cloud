@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     private void pieChartTest(){
-        pieChart = findViewById(R.id.test_pie);
+
         pieChart.setCenterText("60%");
         pieChart.setCenterTextColor(Color.BLUE);
         pieChart.setCenterTextSize(24.0f);

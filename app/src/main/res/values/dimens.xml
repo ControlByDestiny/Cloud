@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_guid_font">10sp</dimen>
+    <dimen name="bottom_guid_padding">5dp</dimen>
+    <dimen name="size_small_font">13sp</dimen>
+    <dimen name="size_normal_font">14sp</dimen>
+    <dimen name="size_big_font">15sp</dimen>
+    <dimen name="size_tittle_font">16sp</dimen>
+</resources>
