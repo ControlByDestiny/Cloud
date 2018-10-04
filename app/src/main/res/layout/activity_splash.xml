@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,7 +9,6 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-
         android:layout_weight="1">
 
 
@@ -20,6 +18,7 @@
             android:layout_height="match_parent"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:contentDescription="@string/splashImgDescr"
             android:scaleType="fitXY" />
 
         <Button
@@ -31,32 +30,23 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:background="@drawable/style_skip"
-            android:text="跳过"
+            android:text="@string/str_btn_skip"
             android:textColor="@android:color/black"
             android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="134dp"
-            android:layout_marginBottom="152dp"
-            android:textSize="12sp" />
     </RelativeLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:background="@android:color/white">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="我的专属农场"
+            android:text="@string/str_splash_welcome"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
     </LinearLayout>

@@ -20,8 +20,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GuideActivity extends AppCompatActivity {
-    private ViewPager mViewPager;
-    private Bitmap[] mBimaps;
     private String[] imgs = {"guid_0.jpg", "guid_1.jpg", "guid_2.jpg"};
     ImageView guid_iv;
     Button btn_start;
@@ -39,7 +37,7 @@ public class GuideActivity extends AppCompatActivity {
     }
 
     private void init() throws IOException {
-        mViewPager = findViewById(R.id.guid_vp_main);
+        ViewPager mViewPager = findViewById(R.id.guid_vp_main);
         LayoutInflater lf = getLayoutInflater();
         int count = imgs.length;
         List<View> views = new ArrayList<>();

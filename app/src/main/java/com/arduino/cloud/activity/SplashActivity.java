@@ -17,7 +17,6 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.arduino.cloud.R;
 import com.arduino.cloud.util.Base64Util;
@@ -41,7 +40,6 @@ public class SplashActivity extends AppCompatActivity {
     private Intent intent = new Intent();
     //定时更新倒计时
     private Timer timer;
-    private ImageView ad_img;
     private Button btn_skip;
     private static final String FILE_NAME = Base64Util.encode("START_UP".getBytes());
     private SharedPreferencesHelper sharedPreferencesHelper;
@@ -124,7 +122,7 @@ public class SplashActivity extends AppCompatActivity {
 
     //初始化
     private void init() {
-        ad_img = findViewById(R.id.splash_ad_img);
+        ImageView ad_img = findViewById(R.id.splash_ad_img);
         btn_skip = findViewById(R.id.splash_btn_skip);
         sharedPreferencesHelper = new SharedPreferencesHelper(this.getApplication());
         sharedPreferencesHelper.open(FILE_NAME);

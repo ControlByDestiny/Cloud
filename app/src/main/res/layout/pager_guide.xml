@@ -8,7 +8,8 @@
         android:id="@+id/guid_iv_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitXY"/>
+        android:scaleType="fitXY"
+        tools:ignore="ContentDescription" />
 
     <Button
         android:id="@+id/guid_btn_start"
@@ -18,7 +19,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="40dp"
         android:background="@drawable/btn_guid_style"
-        android:text="开始使用"
+        android:text="@string/str_btn_start"
         android:textColor="@android:color/black"
         android:elevation="3dp"
         android:visibility="gone"
