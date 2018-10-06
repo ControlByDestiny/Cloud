@@ -1,4 +1,4 @@
-package com.arduino.view;
+package com.arduino.cloud.customview;
 
 import android.content.Context;
 import android.graphics.Canvas;

@@ -10,8 +10,8 @@ import android.view.View;
 
 public abstract  class BasePager extends ViewPager {
     private static final String TAG = "BasePager";
-    protected Context mContext;
-    protected View mRootView;
+    public Context mContext;
+    public View mRootView;
     protected LayoutInflater mLayoutInflater;
     public BasePager(@NonNull Context context) {
         this(context,null);
@@ -31,7 +31,7 @@ public abstract  class BasePager extends ViewPager {
 
     protected abstract void initViews();
 
-
+    protected abstract void initData();
     protected int loadLayoutById() {
         return 0;
     }

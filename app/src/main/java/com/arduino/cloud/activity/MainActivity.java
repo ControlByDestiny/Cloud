@@ -12,8 +12,9 @@ import com.arduino.cloud.ui.BasePager;
 import com.arduino.cloud.ui.ControlPage;
 import com.arduino.cloud.ui.FarmPage;
 import com.arduino.cloud.ui.HomePage;
-import com.arduino.cloud.ui.MainPagerAdapter;
+import com.arduino.cloud.adapter.MainPagerAdapter;
 import com.arduino.cloud.ui.MinePage;
+import com.arduino.cloud.util.ApiTest;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,21 +23,28 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private ViewPager viewPager;
     private RadioGroup rg_guid;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         init();
+        ApiTest apiTest = ApiTest.getInstance();
+        apiTest.init(getApplication());
+        apiTest.getClientStaus();
+        apiTest.getData();
+
     }
-    private void init(){
-        viewPager=findViewById(R.id.main_vp_main);
-        rg_guid=findViewById(R.id.act_rg_main);
-        List<BasePager> views=new ArrayList<>();
+
+    private void init() {
+        viewPager = findViewById(R.id.main_vp_main);
+        rg_guid = findViewById(R.id.act_rg_main);
+        List<BasePager> views = new ArrayList<>();
         views.add(new HomePage(this));
         views.add(new FarmPage(this));
         views.add(new ControlPage(this));
         views.add(new MinePage(this));
-        MainPagerAdapter viewPagerAdapter=new MainPagerAdapter(views);
+        MainPagerAdapter viewPagerAdapter = new MainPagerAdapter(views);
         viewPager.setAdapter(viewPagerAdapter);
         rg_guid.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override

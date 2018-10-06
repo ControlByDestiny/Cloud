@@ -16,6 +16,11 @@ public class ControlPage extends BasePager {
     }
 
     @Override
+    protected void initData() {
+
+    }
+
+    @Override
     protected int loadLayoutById() {
         return R.layout.page_control;
     }

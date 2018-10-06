@@ -1,9 +1,11 @@
-package com.arduino.cloud.ui;
+package com.arduino.cloud.adapter;
 
 import android.support.v4.view.PagerAdapter;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.arduino.cloud.ui.BasePager;
 
 import java.util.List;
 

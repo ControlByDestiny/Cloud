@@ -1,4 +1,4 @@
-package com.arduino.cloud.ui;
+package com.arduino.cloud.adapter;
 
 import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;

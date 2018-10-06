@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.arduino.cloud">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -30,7 +30,15 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <service android:name="com.chinamobile.iot.onenet.edp.toolbox.EdpService"/>
+        <meta-data
+            android:name="com.chinamobile.iot.onenet.APP-KEY"
+            android:value="c62qYZMNoy9Flmo24TlYus=5JRA="/>
+        <meta-data
+            android:name="com.chinamobile.iot.onenet.SCHEME"
+            android:value="http"/>
+        <meta-data
+            android:name="com.chinamobile.iot.onenet.HOST"
+            android:value="api.heclouds.com"/>
     </application>
 
 </manifest>

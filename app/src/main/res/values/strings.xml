@@ -5,7 +5,7 @@
     <string name="str_control">控制</string>
     <string name="str_mine">我的</string>
     <string name="splashImgDescr">欢迎使用</string>
-    <string name="str_splash_welcome">我的专属农场</string>
+    <string name="str_splash_welcome">我的专属花圃</string>
     <string name="str_btn_skip">跳过</string>
     <string name="str_btn_start">开始使用</string>
 </resources>

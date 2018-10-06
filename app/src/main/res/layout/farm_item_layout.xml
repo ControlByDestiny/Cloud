@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/selector_farm_lv_item">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/farm_item_margin"
+            android:layout_marginStart="@dimen/farm_item_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/farm_item_tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/farm_name"
+                 />
+
+            <RadioButton
+                android:id="@+id/farm_item_rbtn_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/selector_rbtn_farm_item_status"
+                android:button="@null"
+                android:padding="5dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:textSize="8sp"
+                />
+
+            <!--<TextView-->
+                <!--android:id="@+id/farm_item_tv_device_status"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="10dp"-->
+                <!--android:background="@android:color/darker_gray"-->
+                <!--android:text="离线" />-->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/farm_item_tv_device_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/farm_item_margin"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/device_id"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/farm_item_btn_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/farm_item_margin"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_to_right"
+        />
+</LinearLayout>
+

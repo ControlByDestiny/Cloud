@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.arduino.cloud.R;
-import com.arduino.cloud.ui.ViewPagerAdapter;
+import com.arduino.cloud.adapter.ViewPagerAdapter;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:elevation="20dp">
 
     <TextView
         android:id="@+id/textView3"
@@ -11,4 +12,10 @@
         android:text="主页"
         android:textColor="@android:color/black"
         android:textSize="32sp"/>
+
+    <Button
+        android:id="@+id/getStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取设备信息" />
 </LinearLayout>

@@ -6,4 +6,5 @@
     <dimen name="size_normal_font">14sp</dimen>
     <dimen name="size_big_font">15sp</dimen>
     <dimen name="size_tittle_font">16sp</dimen>
+    <dimen name="farm_item_margin">12dp</dimen>
 </resources>
