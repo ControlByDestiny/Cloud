@@ -20,7 +20,8 @@
         android:layout_marginBottom="40dp"
         android:background="@drawable/btn_guid_style"
         android:text="@string/str_btn_start"
-        android:textColor="@android:color/black"
+        android:textColor="@color/font_black_color"
+        android:textSize="@dimen/size_normal_font"
         android:elevation="3dp"
         android:visibility="gone"
         tools:targetApi="lollipop" />

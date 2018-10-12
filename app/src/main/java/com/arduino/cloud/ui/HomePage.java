@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.arduino.cloud.R;
+import com.arduino.cloud.util.ApiHelper;
 import com.arduino.cloud.util.ApiTest;
 
 public class HomePage extends BasePager {
@@ -21,9 +22,8 @@ public class HomePage extends BasePager {
         btn_get_status.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                ApiTest apiTest=ApiTest.getInstance();
-                apiTest.getData();
-                apiTest.getClientStaus();
+                ApiHelper apiHelper=ApiHelper.getInstance();
+                apiHelper.sendCmd("38570211","1");
             }
         });
     }

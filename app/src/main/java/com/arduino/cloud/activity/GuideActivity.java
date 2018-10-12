@@ -61,6 +61,7 @@ public class GuideActivity extends AppCompatActivity {
                 Intent intent=new Intent();
                 intent.setAction("android.intent.action.TO_MAIN");
                 startActivity(intent);
+                finish();
             }
         });
 

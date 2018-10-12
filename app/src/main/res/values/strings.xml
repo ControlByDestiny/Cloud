@@ -6,6 +6,12 @@
     <string name="str_mine">我的</string>
     <string name="splashImgDescr">欢迎使用</string>
     <string name="str_splash_welcome">我的专属花圃</string>
-    <string name="str_btn_skip">跳过</string>
+    <string name="str_btn_skip">5s 后跳过</string>
     <string name="str_btn_start">开始使用</string>
+    <string name="str_control_beam">光照</string>
+    <string name="str_control_deviceid">设备ID:</string>
+    <string name="str_control_fan">风扇</string>
+    <string name="str_control_water">浇水</string>
+    <string name="str_control_spray">喷雾</string>
+    <string name="str_control_heat">加热</string>
 </resources>

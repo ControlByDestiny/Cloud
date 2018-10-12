@@ -3,12 +3,15 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">#F3F8F7</color>
+    <color name="colorForeground">#FFFFFF</color>
+    <color name="seekbar_unprogressed">#9A9A9A</color>
+    <color name="seekbar_progressed">#50D367</color>
     <color name="start_divder">#E9EAEA</color>
     <color name="bottom_guid">#9B9B9B</color>
     <color name="bottom_guid_sel">#1AFA29</color>
     <color name="device_status_online">#4D1AFA30</color>
-    <color name="farm_name">#2F2F2F</color>
+    <color name="font_black_color">#2F2F2F</color>
     <color name="device_id">#9A9A9A</color>
     <color name="device_status_offline">#EEE7E7E7</color>
-    <color name="farm_background_color">#F3F8F7</color>
 </resources>

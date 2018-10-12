@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/farm_background_color">
+    android:background="@color/colorBackground">
 
     <ListView
         android:id="@+id/page_lv_main"
@@ -12,9 +12,9 @@
         android:layout_marginStart="@dimen/farm_item_margin"
         android:layout_marginEnd="@dimen/farm_item_margin"
         android:divider="@android:color/transparent"
-        android:dividerHeight="20dp"
-        android:listSelector="@drawable/selector_farm_lv_item"
+        android:dividerHeight="15dp"
         android:scrollbars="none"
+        android:listSelector="@drawable/selector_farm_lv_item"
         >
     </ListView>
 </LinearLayout>

@@ -1,14 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackground"
     android:orientation="vertical">
-
-    <TextView
-        android:id="@+id/textView4"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="个人中心"
-        android:textColor="@android:color/black"
-        android:textSize="32sp"/>
+        android:orientation="vertical"
+        android:background="@color/colorForeground"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="10086"
+            android:textColor="@color/font_black_color"
+            android:textSize="@dimen/size_tittle_font"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_default_user_icon"
+            android:layout_marginBottom="15dp"
+            />
+    </LinearLayout>
+
+
+    <com.arduino.cloud.customview.CustomTextView
+        android:id="@+id/page_control_item_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:leftIcon="@drawable/ic_setting"
+        app:rightIcon="@drawable/ic_to_right"
+        app:text="设置"
+        app:textColor="@color/font_black_color"
+        app:textSize="@dimen/size_normal_font" />
+
+    <com.arduino.cloud.customview.CustomTextView
+        android:id="@+id/page_control_item_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftIcon="@drawable/ic_message"
+        app:rightIcon="@drawable/ic_to_right"
+        app:text="消息"
+        app:textColor="@color/font_black_color"
+        app:textSize="@dimen/size_normal_font" />
 </LinearLayout>

@@ -1,6 +1,7 @@
 package com.arduino.cloud.activity;
 
 
+import android.Manifest;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,10 +15,14 @@ import com.arduino.cloud.ui.FarmPage;
 import com.arduino.cloud.ui.HomePage;
 import com.arduino.cloud.adapter.MainPagerAdapter;
 import com.arduino.cloud.ui.MinePage;
+import com.arduino.cloud.util.ApiHelper;
 import com.arduino.cloud.util.ApiTest;
+import com.tbruyelle.rxpermissions2.RxPermissions;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import io.reactivex.functions.Consumer;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -29,11 +34,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         init();
-        ApiTest apiTest = ApiTest.getInstance();
-        apiTest.init(getApplication());
-        apiTest.getClientStaus();
-        apiTest.getData();
-
+        RxPermissions rxPermissions=new RxPermissions(this);
+        rxPermissions.request(Manifest.permission.CHANGE_NETWORK_STATE)
+        .subscribe();
     }
 
     private void init() {

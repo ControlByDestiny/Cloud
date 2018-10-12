@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:textColor="@color/farm_name"
+                android:textColor="@color/font_black_color"
                  />
 
             <RadioButton
@@ -37,7 +37,7 @@
                 android:padding="5dp"
                 android:clickable="false"
                 android:focusable="false"
-                android:textSize="8sp"
+                android:textSize="12sp"
                 />
 
             <!--<TextView-->
